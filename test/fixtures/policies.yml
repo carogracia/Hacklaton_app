@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  company_id: 1
+  auto_id: 1
+  age_range: MyString
+  gender: MyString
+  city: MyString
+  marital_status: MyString
+  occupation: MyString
+  price: 1
+
+two:
+  company_id: 1
+  auto_id: 1
+  age_range: MyString
+  gender: MyString
+  city: MyString
+  marital_status: MyString
+  occupation: MyString
+  price: 1

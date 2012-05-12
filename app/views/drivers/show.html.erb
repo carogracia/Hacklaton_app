@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>First name:</b>
+  <%= @driver.first_name %>
+</p>
+
+<p>
+  <b>Last name:</b>
+  <%= @driver.last_name %>
+</p>
+
+<p>
+  <b>Age range:</b>
+  <%= @driver.age_range %>
+</p>
+
+<p>
+  <b>Gender:</b>
+  <%= @driver.gender %>
+</p>
+
+<p>
+  <b>City:</b>
+  <%= @driver.city %>
+</p>
+
+<p>
+  <b>Marital status:</b>
+  <%= @driver.marital_status %>
+</p>
+
+<p>
+  <b>Occupation:</b>
+  <%= @driver.occupation %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @driver.email %>
+</p>
+
+
+<%= link_to 'Edit', edit_driver_path(@driver) %> |
+<%= link_to 'Back', drivers_path %>

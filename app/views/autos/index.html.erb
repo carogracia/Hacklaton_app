@@ -1,0 +1,29 @@
+<h1>Listing autos</h1>
+
+<table>
+  <tr>
+    <th>Make</th>
+    <th>Model</th>
+    <th>Year</th>
+    <th>Use</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @autos.each do |auto| %>
+  <tr>
+    <td><%= auto.make %></td>
+    <td><%= auto.model %></td>
+    <td><%= auto.year %></td>
+    <td><%= auto.use %></td>
+    <td><%= link_to 'Show', auto %></td>
+    <td><%= link_to 'Edit', edit_auto_path(auto) %></td>
+    <td><%= link_to 'Destroy', auto, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Auto', new_auto_path %>

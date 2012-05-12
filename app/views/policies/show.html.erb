@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Company:</b>
+  <%= @policy.company_id %>
+</p>
+
+<p>
+  <b>Auto:</b>
+  <%= @policy.auto_id %>
+</p>
+
+<p>
+  <b>Age range:</b>
+  <%= @policy.age_range %>
+</p>
+
+<p>
+  <b>Gender:</b>
+  <%= @policy.gender %>
+</p>
+
+<p>
+  <b>City:</b>
+  <%= @policy.city %>
+</p>
+
+<p>
+  <b>Marital status:</b>
+  <%= @policy.marital_status %>
+</p>
+
+<p>
+  <b>Occupation:</b>
+  <%= @policy.occupation %>
+</p>
+
+<p>
+  <b>Price:</b>
+  <%= @policy.price %>
+</p>
+
+
+<%= link_to 'Edit', edit_policy_path(@policy) %> |
+<%= link_to 'Back', policies_path %>
