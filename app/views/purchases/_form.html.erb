@@ -13,11 +13,11 @@
 
   <div class="field">
     <%= f.label :driver_id %><br />
-    <%= f.number_field :driver_id %>
+    <%= f.collection_select :driver_id, Driver.all, :id, :full_name %>
   </div>
   <div class="field">
     <%= f.label :policy_id %><br />
-    <%= f.number_field :policy_id %>
+    <%= f.collection_select :policy_id, Policy.all, :id, :description %>
   </div>
   <div class="actions">
     <%= f.submit %>

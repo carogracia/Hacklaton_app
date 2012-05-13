@@ -7,10 +7,9 @@ HacklatonApp::Application.routes.draw do
 
   resources :autos
 
-  resources :cars
-
   resources :companies
 
+  get "/policies/:driver_id" => "policies#index"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
