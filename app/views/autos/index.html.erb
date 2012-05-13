@@ -1,29 +1,44 @@
 <h1>Listing autos</h1>
 
-<table>
-  <tr>
-    <th>Make</th>
-    <th>Model</th>
-    <th>Year</th>
-    <th>Use</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+	
+<div class="autos-box">
 
-<% @autos.each do |auto| %>
-  <tr>
-    <td><%= auto.make %></td>
-    <td><%= auto.model %></td>
-    <td><%= auto.year %></td>
-    <td><%= auto.use %></td>
-    <td><%= link_to 'Show', auto %></td>
-    <td><%= link_to 'Edit', edit_auto_path(auto) %></td>
-    <td><%= link_to 'Destroy', auto, confirm: 'Are you sure?', method: :delete %></td>
-  </tr>
-<% end %>
-</table>
+	<div class="auto-left"><%= image_tag "http://media.treehugger.com/assets/images/2011/10/renault-fluence-electric-car-photo1.jpg" %></div>
+	<div class="auto-right">
+		<table>
+		  <tr>
+		    <th>Make</th>
+		    <th>Model</th>
+		    <th>Year</th>
+		    <th>Use</th>
+		    <th></th>
+		    <th></th>
+		    <th></th>
+		  </tr>
 
-<br />
+		<% @autos.each do |auto| %>
+		  <tr>
+		    <td><%= auto.make %></td>
+		    <td><%= auto.model %></td>
+		    <td><%= auto.year %></td>
+		    <td><%= auto.use %></td>
+		    <td><%= link_to 'Show', auto %></td>
+		    <td><%= link_to 'Edit', edit_auto_path(auto) %></td>
+		    <td><%= link_to 'Destroy', auto, confirm: 'Are you sure?', method: :delete %></td>
+		  </tr>
+		<% end %>
+		</table>
 
-<%= link_to 'New Auto', new_auto_path %>
+		<br />
+
+		<%= link_to 'New Auto', new_auto_path %>
+	</div> <!-- auto-right -->
+
+
+	
+		
+		
+</div>
+
+	
+
