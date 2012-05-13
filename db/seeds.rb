@@ -30,7 +30,7 @@ end
 age_groups = ["18-25", "26-35", "36+"]
 genders = ["M", "F"]
 cities = ["Bogota", "Medellin"]
-marital_statuses = ["soltero", "casado"]
+marital_statuses = ["Single", "Married"]
 occupations = ["Student", "Unemployed", "Employed"]
 
 

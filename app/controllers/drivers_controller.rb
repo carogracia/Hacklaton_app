@@ -14,7 +14,10 @@ class DriversController < ApplicationController
   # GET /drivers/1.json
   def show
     @driver = Driver.find(params[:id])
-
+    
+    @eligible_policies = Policy.where("age_range = ? AND gender = ? AND city = ? AND marital_status = ? AND occupation = ?", 
+    @driver.age_range, @driver.gender, @driver.city, @driver.marital_status, @driver.occupation).all
+    logger.debug "how many eligible #{@eligible_policies.size}"
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @driver }
@@ -82,3 +85,4 @@ class DriversController < ApplicationController
     end
   end
 end
+

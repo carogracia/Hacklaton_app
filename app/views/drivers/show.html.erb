@@ -40,6 +40,17 @@
   <%= @driver.email %>
 </p>
 
+<p>
 
+</p>
 <%= link_to 'Edit', edit_driver_path(@driver) %> |
 <%= link_to 'Back', drivers_path %>
+
+
+<% @eligible_policies.each do |policy| %>
+<p>	<%= Company.find(policy.company_id).name %>
+<b>Price: $</b>
+<%= policy.price %>
+</p>
+<%= link_to 'Purchase', new_purchase_path %>
+<% end %>
