@@ -16,15 +16,15 @@
 		    <th></th>
 		  </tr>
 
-		<% @autos.each do |auto| %>
-		  <tr>
-		    <td><%= auto.make %></td>
-		    <td><%= auto.model %></td>
-		    <td><%= auto.year %></td>
-		    <td><%= auto.use %></td>
-		    <td><%= link_to 'Show', auto %></td>
-		    <td><%= link_to 'Edit', edit_auto_path(auto) %></td>
-		    <td><%= link_to 'Destroy', auto, confirm: 'Are you sure?', method: :delete %></td>
+		<%@autos.each do |auto| %>
+			  <tr>
+			    <td><% auto.make %></td>
+			    <td><% auto.model %></td>
+			    <td><% auto.year %></td>
+			    <td><% auto.use %></td>
+			    <td><% link_to 'Show', auto %></td>
+			    <td><% link_to 'Edit', edit_auto_path(auto) %></td>
+			    <td><% link_to 'Destroy', auto, confirm: 'Are you sure?', method: :delete %></td>
 		  </tr>
 		<% end %>
 		</table>

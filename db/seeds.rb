@@ -26,7 +26,7 @@ cars = [{:make => "Ranault", :model => "Twingo", :year => 2012, :use => "persona
 cars.each do |car|
   a= Auto.create :make => car[:make], :model => car[:model], :year => car[:year], :use => car[:use]
 end
-# 
+
 age_groups = ["18-25", "26-35", "36+"]
 genders = ["M", "F"]
 cities = ["Bogota", "Medellin"]

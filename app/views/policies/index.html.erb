@@ -15,21 +15,21 @@
     <th></th>
   </tr>
 
-<%# @policies.each do |policy| %>
+<% @policies.each do |policy| %>
   <tr>
-    <td><#%= policy.company_id %></td>
-    <td><#%= policy.auto_id %></td>
-    <td><#%= policy.age_range %></td>
-    <td><#%= policy.gender %></td>
-    <td><#%= policy.city %></td>
-    <td><#%= policy.marital_status %></td>
-    <td><#%= policy.occupation %></td>
-    <td><#%= policy.price %></td>
-    <td><#%= link_to 'Show', policy %></td>
-    <td><#%= link_to 'Edit', edit_policy_path(policy) %></td>
-    <td><#%= link_to 'Destroy', policy, confirm: 'Are you sure?', method: :delete %></td>
+    <td><%= Company.find(policy.company_id).name %></td>
+    <td><%= policy.auto_id %></td>
+    <td><%= policy.age_range %></td>
+    <td><%= policy.gender %></td>
+    <td><%= policy.city %></td>
+    <td><%= policy.marital_status %></td>
+    <td><%= policy.occupation %></td>
+    <td>$ <%= policy.price %></td>
+    <td>  |<%= link_to 'Show', policy %></td>
+    <td><%= link_to 'Edit', edit_policy_path(policy) %></td>
+    <td><%= link_to 'Destroy', policy, confirm: 'Are you sure?', method: :delete %></td>
   </tr>
-
+<%end%>
 
 
 
