@@ -9,5 +9,6 @@ HacklatonApp::Application.routes.draw do
 
   resources :companies
 
+  get "/policies/:driver_id" => "policies#index"
 
 end

@@ -22,12 +22,15 @@ ActiveRecord::Schema.define(:version => 20120512171751) do
     t.datetime "updated_at", :null => false
   end
 
-  create_table "cars", :force => true do |t|
-    t.string   "name"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-  end
-
+# <<<<<<< HEAD
+#   create_table "cars", :force => true do |t|
+#     t.string   "name"
+#     t.datetime "created_at", :null => false
+#     t.datetime "updated_at", :null => false
+#   end
+# 
+# =======
+# >>>>>>> c491127871bb53b67d0999a6c40893973a174660
   create_table "companies", :force => true do |t|
     t.string   "name"
     t.datetime "created_at", :null => false

@@ -3,13 +3,12 @@ class PoliciesController < ApplicationController
   # GET /policies.json
   def index
     @policies = Policy.all
-
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @policies }
     end
   end
-
+   #   
   # GET /policies/1
   # GET /policies/1.json
   def show
@@ -51,6 +50,8 @@ class PoliciesController < ApplicationController
         format.json { render json: @policy.errors, status: :unprocessable_entity }
       end
     end
+    
+    
   end
 
   # PUT /policies/1
